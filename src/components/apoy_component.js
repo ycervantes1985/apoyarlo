@@ -1,4 +1,5 @@
 import React from "react"
+import '../App.css';
 
 
 
@@ -35,7 +36,6 @@ const userObject = [
 return (
     <>
     {userObject.map(({firsName, lastName, age, hairColor}) => (
-     
      <div className="apoyo">
       <h1>
           <strong>{lastName},{firsName}</strong>
@@ -43,8 +43,9 @@ return (
       <h4>Age:{age}</h4>
       <h4>Hair Color:{hairColor}</h4>
 
-     </div>
-      
+      </div>
+
+     
 
         
         ))}
