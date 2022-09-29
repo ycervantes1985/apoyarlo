@@ -6,12 +6,22 @@
 margin: 0 auto;
 padding-left: 0;
 width: 400px;
-height: 200px;
+height: 250px;
 display: flex;
 flex-direction: column;
 background-color: gray;
 margin-top: 15px;
 border-radius: 20px;
+}
+
+button{
+  margin-left: 320px;
+  width: 60px;
+  height: 30px;
+  background-color: cadetblue;
+  color: white;
+  font-size: large;
+  border-radius: 20px;
 }
 
 
