@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import '../App.css';
 
 
@@ -33,11 +34,12 @@ const userObject = [
 
   function MyComponent(){
 
-   
+    const [ages, setAges] = useState(0)
+
     
     return (
     <>
-    {userObject.map(({firsName, lastName, age, hairColor}, index) => (
+    {userObject.map(({firsName, lastName, age, hairColor}) => (
         <div className="apoyo">
             <h1>
                 <strong>{lastName},{firsName}</strong>
@@ -45,7 +47,7 @@ const userObject = [
             <h4>Age:{age}</h4>
             <h4>Hair Color:{hairColor}</h4>
             <div>
-                <button>+</button>
+                <button onClick={() => setAges(age+1)}>+</button>
             </div>
         </div>
 ))}
