@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import './index.css';
+import MyComponent from './components/apoy_component';
+import userObject from './Data/users';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+            userObject.map(({firsName, lastName, age, hairColor})=>{
+              return <MyComponent firsName={firsName} lastName={lastName} age={age} hairColor={hairColor}/>
+            })
+          }
     </div>
   );
 }
