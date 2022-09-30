@@ -3,7 +3,7 @@ import { useState } from 'react';
 import '../App.css';
 
   const MyComponent = (props) => {
-  const { firsName, lastName, age,  hairColor } = props; 
+  const {firsName, lastName, age,  hairColor} = props; 
   const [newAge, setNewAge] = useState(age);
   return (
     <div className="apoyo">

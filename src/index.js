@@ -14,7 +14,7 @@ root.render(
       <div>
           {
             userObject.map(({firsName, lastName, age, hairColor})=>{
-              return <MyComponent firstName={firsName} lastName={lastName} age={age} hairColor={hairColor}/>
+              return <MyComponent firsName={firsName} lastName={lastName} age={age} hairColor={hairColor}/>
             })
           }
       </div>
