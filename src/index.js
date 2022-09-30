@@ -5,13 +5,19 @@ import './index.css';
 //import App from './App';
 import MyComponent from './components/apoy_component';
 import reportWebVitals from './reportWebVitals';
+import userObject from './Data/users';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   
-        <MyComponent />
-   
+      <div>
+          {
+            userObject.map(({firsName, lastName, age, hairColor})=>{
+              return <MyComponent firstName={firsName} lastName={lastName} age={age} hairColor={hairColor}/>
+            })
+          }
+      </div>
   </React.StrictMode>
 );
 
